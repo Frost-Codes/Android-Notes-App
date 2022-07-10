@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back"
+
+
+    android:orientation="vertical"
+    android:padding="8dp"
+    tools:context=".AddNoteActivity">
+
+    <TextView
+        android:id="@+id/heading"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/blackrounded"
+        android:gravity="center"
+        android:padding="5dp"
+        android:text="Add Note"
+        android:textColor="#fff"
+        android:textSize="25dp"
+        android:textStyle="bold|italic" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/blackrounded"
+        android:orientation="vertical"
+        android:padding="5dp">
+
+        <EditText
+            android:id="@+id/title_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="#06233A"
+            android:hint="Tittle"
+            android:padding="10dp"
+            android:textColor="#fff"
+            android:textColorHint="#6E6C6C" />
+
+        <EditText
+            android:id="@+id/description_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="#06233A"
+            android:gravity="top"
+            android:hint="Description"
+            android:lines="15"
+            android:padding="10dp"
+            android:textColor="#fff"
+            android:textColorHint="#6E6C6C" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/save_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:backgroundTint="#000"
+        android:baselineAligned="false"
+        android:padding="12dp"
+        android:text="Save"
+        android:textStyle="bold|italic" />
+
+</LinearLayout>
